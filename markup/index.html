@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+</head>
+<body>
+  <header class="app-header">
+    <img class="app-header__logo" src="./img/Logo.svg" alt="My App" width="119" height="38">
+    <div class="app-header__info">
+      <p class="app-header__total">
+        <span class="app-header__label">Total:</span>
+        <span class="app-header__value">3</span>
+      </p>
+      <p class="app-header__done">
+        <span class="app-header__label">Done:</span>
+        <span class="app-header__value">1</span>
+      </p>
+    </div>
+  </header>
+  <main class="app-main">
+    <h1 class="visually-hidden"></h1>
+    <section class="app-section tasks">
+      <h2 class="visually-hidden">Tasks</h2>
+      <ul class="tasks__list">
+        <li class="tasks__item tasks__item--important">
+          <h3 class="tasks__title">Drink Coffee</h3>
+          <div class="tasks__btns">
+            <button class="tasks__btn tasks__btn--important" type="button" aria-label="disable/enable important">make important</button>
+            <button class="tasks__btn tasks__btn--delete" type="button" aria-label="delete task">delete task</button>
+          </div>
+        </li>
+        <li class="tasks__item tasks__item--done">
+          <h3 class="tasks__title">Drink Coffee</h3>
+          <div class="tasks__btns">
+            <button class="tasks__btn tasks__btn--important" type="button" aria-label="disable/enable important">make important</button>
+            <button class="tasks__btn tasks__btn--delete" type="button" aria-label="delete task">delete task</button>
+          </div>
+        </li>
+        <li class="tasks__item">
+          <h3 class="tasks__title">Drink Coffee</h3>
+          <div class="tasks__btns">
+            <button class="tasks__btn tasks__btn--important" type="button" aria-label="disable/enable important">make important</button>
+            <button class="tasks__btn tasks__btn--delete" type="button" aria-label="delete task">delete task</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="app-section make-task">
+      <h2 class="visually-hidden">Make task</h2>
+      <div class="make-task__container">
+        <input class="make_task__input" type="text" placeholder="Input task name...">
+        <button class="make_task__btn" type="button">Add Task</button>
+      </div>
+    </section>
+  </main>
+  <footer class="app-footer">
+    <p class="app-footer__copy">&copy; My App 2020</p>
+  </footer>
+</body>
+</html>
